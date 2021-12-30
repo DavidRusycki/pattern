@@ -1,21 +1,6 @@
 <?php
-namespace singleton;
+require_once('../../vendor/autoload.php');
 
-/**
- * Classe de logs.
- * @pattern Singleton
- */
-class LogsSingleton {
+$LogsSingleton = Patterns\Singleton\LogsSingleton::obterInstancia();
 
-    /** @var self $instancia Instância da classe de logs. */
-    protected static $instancia;
-
-    /**
-     * Grava os logs no arquivo de texto.
-     * @param Array $aDados
-     */
-    public function gravarLog(Array $aDados): void {
-
-    }
-
-}
+var_dump($LogsSingleton);
