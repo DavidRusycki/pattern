@@ -1,7 +1,8 @@
 {
     "autoload": {
         "psr-4" : {
-            "Patterns\\" : "patterns/"
+            "Patterns\\" : "patterns/",
+            "Valuation\\" : "patterns/valuation/"
         }
     }
 }

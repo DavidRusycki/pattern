@@ -43,8 +43,13 @@ class LogsSingleton {
         return self::$instancia;
     }
 
-    private function __construct() {}
+    public function __construct() {
+        $oInstancia = null;
+        for ($i=0; $i < 5000; $i++) { 
+            $oInstancia = new \Valuation\EstimateTime();
+        }
+    }
+    
     private function __clone() {}
-    private function __wakeup() {}
     
 }
